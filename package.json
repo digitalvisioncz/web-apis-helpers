@@ -1,0 +1,54 @@
+{
+  "name": "@digitalvisioncz/web-apis-helpers",
+  "version": "0.1.0",
+  "description": "Web APIs' helpers for the frontend development",
+  "author": {
+    "name": "Digital Vision CZ",
+    "url": "https://digitalvision.cz"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalvisioncz/web-apis-helpers"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.15.8",
+    "@digitalvisioncz/eslint-config-base": "^1.0.4",
+    "@digitalvisioncz/eslint-config-typescript": "^1.0.6",
+    "@digitalvisioncz/typescript-config": "^1.0.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.0",
+    "@rollup/plugin-eslint": "^8.0.1",
+    "@rollup/plugin-inject": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.4",
+    "@types/react": "^18.0.17",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.20.3",
+    "rollup": "^2.58.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "typescript": "^4.7.4"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

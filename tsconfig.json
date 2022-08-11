@@ -1,0 +1,11 @@
+{
+  "extends": "@digitalvisioncz/typescript-config",
+  "compilerOptions": {
+    "checkJs": true,
+    "declaration": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "./src/**/*",
+  ],
+}
