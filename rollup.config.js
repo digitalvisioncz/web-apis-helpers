@@ -5,7 +5,6 @@ import eslint from '@rollup/plugin-eslint';
 import external from 'rollup-plugin-peer-deps-external';
 import inject from '@rollup/plugin-inject';
 import typescript from '@rollup/plugin-typescript';
-import pkg from './package.json';
 import dts from 'rollup-plugin-dts'
 
 const plugins =  [
@@ -45,7 +44,7 @@ const plugins =  [
 ];
 
 const helpers = [
-    'navigator/getPrefferedLanguage',
+    'navigator/getPrefferedLanguage/getPrefferedLanguage',
 ]
 
 export default [{
@@ -53,10 +52,12 @@ export default [{
     output: [
         {
             dir: 'dist',
+            entryFileNames: '[name].js',
             format: 'cjs',
             exports: 'named',
         }, {
             dir: 'dist',
+            entryFileNames: '[name].module.js',
             format: 'es',
             exports: 'named',
         },

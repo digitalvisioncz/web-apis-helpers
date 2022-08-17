@@ -1,7 +1,7 @@
 {
-  "name": "@digitalvisioncz/web-apis-helpers",
+  "name": "@digitalvisioncz/web-apis-toolkit",
   "version": "0.1.0",
-  "description": "Web APIs' helpers for the frontend development",
+  "description": "Web APIs' helpers and React components for the frontend development",
   "author": {
     "name": "Digital Vision CZ",
     "url": "https://digitalvision.cz"
@@ -9,10 +9,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalvisioncz/web-apis-helpers"
+    "url": "https://github.com/digitalvisioncz/web-apis-toolkit"
   },
   "main": "dist/index.js",
-  "module": "dist/index.modern.js",
+  "module": "dist/index.module.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",

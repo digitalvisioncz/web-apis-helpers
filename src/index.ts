@@ -1,2 +1,4 @@
+import getPrefferedLanguage from './navigator/getPrefferedLanguage/getPrefferedLanguage';
+
 // eslint-disable-next-line import/prefer-default-export
-export {default as getPrefferedLanguage} from './navigator/getPrefferedLanguage';
+export {getPrefferedLanguage};
