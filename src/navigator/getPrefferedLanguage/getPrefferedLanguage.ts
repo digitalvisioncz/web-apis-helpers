@@ -1,7 +1,4 @@
-export enum SubtagVariants {
-    language = 'language',
-    region = 'region',
-}
+export type SubtagVariants = 'language' | 'region';
 
 export type GetPrefferedLanguage = {
     subtag: SubtagVariants,
@@ -16,11 +13,11 @@ const getPrefferedLanguage = ({
         [prefferedLanguage] = navigator.languages;
     }
 
-    if (subtag === SubtagVariants.language) {
+    if (subtag === 'language') {
         return prefferedLanguage.split('-')[0];
     }
 
-    if (subtag === SubtagVariants.region) {
+    if (subtag === 'region') {
         const langCodeArray = prefferedLanguage.split('-');
 
         return langCodeArray[1].length === 2 ? langCodeArray[1] : langCodeArray[2];
