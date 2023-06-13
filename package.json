@@ -7,10 +7,7 @@
     "url": "https://digitalvision.cz"
   },
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/digitalvisioncz/web-apis-toolkit"
-  },
+  "repository": "https://github.com/digitalvisioncz/web-apis-toolkit",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "typings": "dist/index.d.ts",
