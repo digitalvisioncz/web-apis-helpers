@@ -21,7 +21,7 @@ By default, `getPreferredLanguage` return [RFC 5646](https://datatracker.ietf.or
 | value | Description |
 | --- | --- |
 | `language` | Returns only language subtag  |
-| `delay` | Return only region subtag |
+| `region` | Return only region subtag |
 
 **Examples:**
 ```js
