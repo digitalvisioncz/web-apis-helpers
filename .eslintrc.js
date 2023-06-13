@@ -8,7 +8,7 @@ module.exports = {
         tsconfigRootDir: __dirname,
         sourceType: 'module',
     },
-    extends: ['@digitalvisioncz/eslint-config-base', '@digitalvisioncz/eslint-config-typescript'],
+    extends: ['@dvdevcz/eslint-config-base', '@dvdevcz/eslint-config-typescript'],
     rules: {},
     ignorePatterns: ['.eslintrc', '.eslintrc.js'],
 };
