@@ -8,5 +8,6 @@
   "include": [
     "./src/**/*",
     "./commitlint.config.js",
+    "./release.config.js",
   ],
 }
