@@ -5,9 +5,9 @@ import eslint from '@rollup/plugin-eslint';
 import external from 'rollup-plugin-peer-deps-external';
 import inject from '@rollup/plugin-inject';
 import typescript from '@rollup/plugin-typescript';
-import dts from 'rollup-plugin-dts'
+import dts from 'rollup-plugin-dts';
 
-const plugins =  [
+const plugins = [
     nodeResolve({
         extensions: [
             '.jsx',
@@ -43,35 +43,34 @@ const plugins =  [
     }),
 ];
 
-const helpers = [
-    'navigator/getPrefferedLanguage/getPrefferedLanguage',
-]
+const helpers = ['navigator/getPreferredLanguage/getPreferredLanguage'];
 
-export default [{
-    input: ['src/index.ts', ...helpers.map(h => `src/${h}.ts`)],
-    output: [
-        {
-            dir: 'dist',
-            entryFileNames: '[name].js',
-            format: 'cjs',
-            exports: 'named',
-        }, {
-            dir: 'dist',
-            entryFileNames: '[name].module.js',
-            format: 'es',
-            exports: 'named',
-        },
-    ],
-    plugins,
-    preserveModules: true,
-},
-{
-    input: 'src/index.ts',
-    output: [
-        {
-            file: `dist/index.d.ts`,
-            format: 'es',
-        }
-    ],
-    plugins: [dts()],
-}];
+export default [
+    {
+        input: ['src/index.ts', ...helpers.map(h => `src/${h}.ts`)],
+        output: [
+            {
+                dir: 'dist',
+                entryFileNames: '[name].js',
+                format: 'cjs',
+                exports: 'named',
+            }, {
+                dir: 'dist',
+                entryFileNames: '[name].module.js',
+                format: 'es',
+                exports: 'named',
+            },
+        ],
+        plugins,
+        preserveModules: true,
+    }, {
+        input: 'src/index.ts',
+        output: [
+            {
+                file: 'dist/index.d.ts',
+                format: 'es',
+            },
+        ],
+        plugins: [dts()],
+    },
+];

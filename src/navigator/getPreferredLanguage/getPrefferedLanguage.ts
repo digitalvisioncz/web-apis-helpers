@@ -4,7 +4,7 @@ export type GetPrefferedLanguage = {
     subtag: SubtagVariants,
 };
 
-const getPrefferedLanguage = ({
+const getPreferredLanguage = ({
     subtag,
 }: GetPrefferedLanguage): string => {
     let prefferedLanguage = navigator.language;
@@ -26,4 +26,4 @@ const getPrefferedLanguage = ({
     return prefferedLanguage;
 };
 
-export default getPrefferedLanguage;
+export default getPreferredLanguage;
