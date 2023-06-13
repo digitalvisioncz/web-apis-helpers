@@ -1,5 +1,4 @@
 # Web APIs' toolkit
-
 Web APIs' helpers and React components for the frontend development.
 
 ## Installation
@@ -18,7 +17,6 @@ yarn add @dvdevcz/web-api-helpers
 Return the user's preferred language based on UI browser settings. It uses [Navigator.language](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/language) property.
 
 **Subtag**
-
 By default, `getPrefferedLanguage` return [RFC 5646](https://datatracker.ietf.org/doc/html/rfc5646) language tag. You can specify if you want to return `region` or `language` subtag by sending the optional parameter `subtag` with the value:
 | value | Description |
 | --- | --- |
@@ -26,7 +24,6 @@ By default, `getPrefferedLanguage` return [RFC 5646](https://datatracker.ietf.or
 | `delay` | Return only region subtag |
 
 **Examples:**
-
 ```js
 import {getPrefferedLanguage} from '@dvdevcz/web-api-helpers';
 
