@@ -9,5 +9,6 @@
     "./src/**/*",
     "./commitlint.config.js",
     "./release.config.js",
+    "./rollup.config.js",
   ],
 }

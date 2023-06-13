@@ -1,4 +1,8 @@
-import getPrefferedLanguage from './navigator/getPrefferedLanguage/getPrefferedLanguage';
+import getPreferredLanguage from './navigator/getPreferredLanguage/getPrefferedLanguage';
 
-// eslint-disable-next-line import/prefer-default-export
-export {getPrefferedLanguage};
+const getPrefferedLanguage = getPreferredLanguage; // depricated, typo in helper name
+
+export {
+    getPrefferedLanguage, // depricated, typo in helper name
+    getPreferredLanguage,
+};
