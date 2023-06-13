@@ -1101,6 +1101,30 @@
   resolved "https://npm.pkg.github.com/download/@digitalvisioncz/typescript-config/1.0.0/1c2a31ce2698a3653de2377e0b005dfdf5fff611#1c2a31ce2698a3653de2377e0b005dfdf5fff611"
   integrity sha512-/8qb3WgQ4Vz6G+mFlyL+dPodG47ga1NKf/06LC3nCcqHof3HDdLQeEI9VqDaISATm+ka+p4Sj5J5nPgUrgF3aw==
 
+"@dvdevcz/eslint-config-base@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@dvdevcz/eslint-config-base/-/eslint-config-base-0.0.3.tgz#9c9f262293025dfb6b536b63d3b1fff91412e195"
+  integrity sha512-IAAwjwRpbmZQSLOcnKUEyFcHmqtl6ftA4LpoW3NWHnmyBqjzpGlfCOLJFVpaOOrKmhRVBtndYUnpAKzdGqG0UA==
+  dependencies:
+    eslint "^8.10.0"
+    eslint-config-airbnb-base "^15.0.0"
+    eslint-plugin-import "^2.25.4"
+
+"@dvdevcz/eslint-config-typescript@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@dvdevcz/eslint-config-typescript/-/eslint-config-typescript-0.0.4.tgz#ae03e1f136e6e1fdf709683d5d4f8594aa5aec5c"
+  integrity sha512-ilxF2Hh5zJk2gqKgluOjcQvtZ8L8MBT+f0bZ5omsswoaZdfqt8OAH8p3TeV/N4rwLfS+rZPxZd/JpdxUowim3A==
+  dependencies:
+    "@dvdevcz/eslint-config-base" "^0.0.3"
+    "@typescript-eslint/eslint-plugin" "^5.27.1"
+    "@typescript-eslint/parser" "^5.27.1"
+    eslint-config-airbnb-base "^15.0.0"
+
+"@dvdevcz/typescript-config@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@dvdevcz/typescript-config/-/typescript-config-0.0.3.tgz#f5a1248ae448e153b58084a2312177585d47846e"
+  integrity sha512-TRmN7+YNIKc0qe79wX+PZCdZSx6GOhlD1vx470jlTmOfNpBQ492xc1j8wbN8QIbGAB3C/pQgH+RyJTgpTmR/RA==
+
 "@eslint/eslintrc@^0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.4.3.tgz#9e42981ef035beb3dd49add17acb96e8ff6f394c"
