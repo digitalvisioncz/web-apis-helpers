@@ -1,4 +1,4 @@
-import getPreferredLanguage from './navigator/getPreferredLanguage/getPrefferedLanguage';
+import getPreferredLanguage from './navigator/getPreferredLanguage/getPreferredLanguage';
 
 const getPrefferedLanguage = getPreferredLanguage; // depricated, typo in helper name
 

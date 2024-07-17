@@ -5,7 +5,7 @@ import eslint from '@rollup/plugin-eslint';
 import external from 'rollup-plugin-peer-deps-external';
 import inject from '@rollup/plugin-inject';
 import typescript from '@rollup/plugin-typescript';
-import dts from 'rollup-plugin-dts';
+// import dts from 'rollup-plugin-dts';
 
 const plugins = [
     nodeResolve({
@@ -14,6 +14,8 @@ const plugins = [
             '.js',
             '.json',
             '.css',
+            '.ts',
+            '.tsx',
         ],
     }),
     eslint({
@@ -63,14 +65,5 @@ export default [
         ],
         plugins,
         preserveModules: true,
-    }, {
-        input: 'src/index.ts',
-        output: [
-            {
-                file: 'dist/index.d.ts',
-                format: 'es',
-            },
-        ],
-        plugins: [dts()],
     },
 ];
